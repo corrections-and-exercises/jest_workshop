@@ -12,7 +12,7 @@ describe('addition', () => {
     const result = addNumbers(num1, num2);
 
     //assert
-    expect(result).toBe(9);
+    expect(result).toBe(expectedValue);
   });
 
   it('should return NaN if arguments are not numbers', () => {
