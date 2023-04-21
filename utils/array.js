@@ -1,7 +1,8 @@
 const addItemToArray = (array, item) => {
   if (typeof item !== 'string') throw new Error("it's not a string");
-  array.push(item);
-  return array;
+  const copyArray = [...array];
+  copyArray.push(item);
+  return copyArray;
 };
 
 module.exports = { addItemToArray };
